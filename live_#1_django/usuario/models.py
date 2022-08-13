@@ -8,3 +8,7 @@ class Usuario(models.Model):
     sobrenome = models.CharField(max_length=100)
     idade = models.IntegerField()
     ativo = models.BooleanField(default=False)
+
+
+    def __str__(self) -> str:
+        return self.nome
