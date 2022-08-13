@@ -10,3 +10,8 @@ def cadastro(request):
 def login(request):
 
     return HttpResponse('Você está na página de login')
+
+
+def home(request):
+
+    return HttpResponse('Você está na home do usuário')
