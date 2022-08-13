@@ -9,7 +9,7 @@ def cadastro(request):
 
 def login(request):
 
-    return HttpResponse('Você está na página de login')
+    return render(request, 'login.html')
 
 
 def home(request):
