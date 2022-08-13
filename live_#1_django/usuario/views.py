@@ -9,8 +9,9 @@ def cadastro(request):
 
 def login(request):
 
-    return render(request, 'login/login.html')
-
+    nome = request.GET.get('nome')
+    sobrenome = request.GET.get('sobrenome')
+    return render(request, 'login/login.html', {'nome_usuario': nome, 'sobrenome_usuario': sobrenome})
 
 def home(request):
 
